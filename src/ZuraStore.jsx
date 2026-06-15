@@ -1153,7 +1153,7 @@ function Footer({ goPage }) {
       </footer>
       <div style={{ borderTop:"1px solid #2a2a2a",padding:"18px 5%",display:"flex",justifyContent:"space-between",color:"#555",fontSize:"0.73rem" }}>
         <span>© 2026 ZURA Store — Nampula, Moçambique</span>
-        <span>Feito com ❤️ em Moçambique</span>
+        <span>Feito com AMOR em Nampula - Moçambique</span>
       </div>
     </>
   );
