@@ -1,0 +1,66 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 21px;
+}
+
+:root {
+  --bg-root:    #0d0d0d;
+  --bg-card:    #1a1a1a;
+  --bg-input:   #1e1e1e;
+  --border:     #2a2a2a;
+  --border2:    #3a3a3a;
+  --text:       #f0ece4;
+  --text-dim:   #888888;
+  --text-dim2:  #aaaaaa;
+  --text-dim3:  #cccccc;
+  --text-dim4:  #666666;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-root:    #f7f5f1;
+    --bg-card:    #ffffff;
+    --bg-input:   #f0eee9;
+    --border:     #e0ddd5;
+    --border2:    #cfcabe;
+    --text:       #1c1a16;
+    --text-dim:   #6e6a60;
+    --text-dim2:  #5a564c;
+    --text-dim3:  #45423a;
+    --text-dim4:  #8a8578;
+  }
+}
+
+body {
+  background: var(--bg-root);
+  color: var(--text);
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+input, select, textarea, button {
+  font-family: inherit;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+@keyframes zuraSpin {
+  from { transform: rotateY(0deg) rotateX(15deg); }
+  to   { transform: rotateY(360deg) rotateX(15deg); }
+}
+
+@keyframes zuraSpinReverse {
+  from { transform: rotateY(0deg) rotateX(-10deg); }
+  to   { transform: rotateY(-360deg) rotateX(-10deg); }
+}
